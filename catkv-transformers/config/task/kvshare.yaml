@@ -1,0 +1,21 @@
+select_strategy:
+  type: "Kvshare"
+  recompute_ratio: 0.15
+  key_or_value: "value" # value, key
+  mask_type: "True" # True, Top-Right, Bottom-Right
+
+# disk_dir: "llama3-8b"
+disk_dir: "PIC_alogrithm"
+io_mode: "S3"
+io_config: {}
+compress_strategy:
+  type: "Ours"
+  score: "no" 
+  ratio: 0.15
+
+datasets:
+  - "needle-multi-rag"
+  - "wikimqa"
+  - "musique"
+
+device: "cuda:0"

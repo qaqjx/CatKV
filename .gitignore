@@ -1,0 +1,40 @@
+# Local Python environment
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+*.so
+*.o
+*.a
+
+# Runtime outputs
+kvcache/
+**/kvcache/
+**/kvcache*/
+result/
+result*/
+**/result/
+**/result*/
+results/
+results*/
+**/results/
+**/results*/
+
+# Local/private config
+csrc/config/s3.ini
+
+# Local backup folders
+.subrepo-git-backups/
+
+# OS/editor files
+.DS_Store
+.vscode/

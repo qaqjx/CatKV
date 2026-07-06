@@ -1,0 +1,19 @@
+select_strategy:
+  type: "Epic"
+  recompute_num: 16
+  # mask_type: "True" # True, Top-Right, Bottom-Right
+
+disk_dir: "cache/qwen3-4/None"
+compress_strategy:
+  type: "Ours"
+  score: "no" 
+  ratio: 0.15
+
+
+datasets:
+  - "wikimqa"
+  # - "musique"
+  # - "repobench-p"
+  # - "needle-multi-rag"
+
+device: "cuda:0"

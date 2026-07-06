@@ -1,0 +1,6 @@
+{
+  "wikimqa": "../dataset/wikimqa_s.jsonl",
+  "musique": "../dataset/musique_s.jsonl",
+  "repobench-p": "../dataset/repobench-p.jsonl",
+  "needle-multi-rag": "../dataset/needle_multi_rag.jsonl"
+}

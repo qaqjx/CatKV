@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catkv-transformers"
+version = "0.1.0"
+description = "CatKV/CatKV KV cache management experiments based on Hugging Face Transformers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate",
+    "debugpy",
+    "flashinfer-python",
+    "fuzzywuzzy",
+    "jieba>=0.42.1",
+    "nvtx",
+    "omegaconf",
+    "python-levenshtein",
+    "rouge-score",
+    "safetensors",
+    "torch==2.8.0",
+    "tqdm",
+    "transformers==4.57.3",
+    "trio",
+    "vllm",
+    "xxhash",
+]
+
+[project.optional-dependencies]
+analysis = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["catkv*", "exp*"]
+exclude = ["dataset*", "config*", "catkv_transformers.egg-info*"]

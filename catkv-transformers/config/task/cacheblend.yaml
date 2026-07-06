@@ -1,0 +1,23 @@
+select_strategy:
+  type: "CacheBlend"
+  recompute_ratio: 0.15
+  key_or_value: "value" 
+  mask_type: "True" # True, Top-Right, Bottom-Right
+
+disk_dir: "kvcache"
+io_mode: "S3"
+io_config: {}
+
+compress_strategy:
+  type: "Ours"
+  score: "no" 
+  ratio: 0.15
+
+datasets:
+  - "needle-multi-rag"
+  # - "wikimqa"
+  # - "musique"
+  # - "repobench-p"
+
+
+device: "cuda:0"
