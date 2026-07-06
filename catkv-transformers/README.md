@@ -13,18 +13,12 @@ CatKV is a research project focused on efficient key-value cache management for 
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd CatKV
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Install the package:
+2. Install the package:
 ```bash
 pip install -e .
 ```
@@ -48,53 +42,3 @@ Model configurations are available in the [`config/`](config/) directory:
 - [`qwen-2.5-7b-instruct.yaml`](config/qwen-2.5-7b-instruct.yaml)
 - And more...
 
-
-## Experiment Parameters
-
-Common parameters for experiments:
-- `--config_path`: Path to model configuration file
-- `--result_dir`: Directory to save results
-- `--dataset_path`: Path to dataset file
-- `--max_output`: Maximum output length
-- `--select_type`: Cache selection strategy ("value", "key", "epic")
-- `--recompute_type`: Recomputation strategy ("token", "block")
-- `--recompute_ratio`: Ratio for recomputation (0.0-1.0)
-- `--precompute`: Enable precomputation
-
-## Results
-
-Results are saved in JSONL format in the [`result/`](result/) directory, organized by dataset and model. Each result entry includes:
-- Prediction text
-- Time to First Token (TTFT)
-- Ground truth answer
-- Evaluation score
-
-## Testing
-
-Run the test suite:
-```bash
-./test.sh
-```
-
-Individual tests are available in the [`test/`](test/) directory.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you use CatKV in your research, please cite:
-
-```bibtex
-@misc{CatKV2024,
-  title={CatKV: Efficient Key-Value Cache Management for Large Language Models},
-  author={...},
-  year={2024},
-  url={...}
-}
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.

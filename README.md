@@ -1,6 +1,6 @@
-# catkv-release
+# CatKV
 
-`catkv-release` groups the CatKV release components. It is not a single Python
+`CatKV` groups the CatKV release components. It is not a single Python
 package; each source directory has its own package layout and entry points.
 
 ## Components
